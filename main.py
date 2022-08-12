@@ -3,9 +3,6 @@ from cmath import exp
 from unittest import expectedFailure
 import discord
 
-#Custom PY Files
-import youtube_dl
-import os
 #import config
 #import customPrefix
 
