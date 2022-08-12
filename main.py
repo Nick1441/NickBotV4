@@ -47,4 +47,4 @@ async def on_message(message):
     await client.process_commands(message)
 
 
-client.run(config.DISCORD_TOKEN)
+client.run("TEST")
