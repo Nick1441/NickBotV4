@@ -6,20 +6,19 @@ import discord
 import config
 #import customPrefix
 
-import json
-
 from discord.ext import commands
 
-#------====== Load Guild Specific Prefix ======------
-def get_prefix(client, message):
-    with open('prefixes.json', 'r') as f:
-        prefixes = json.load(f)
-    return prefixes[str(message.guild.id)]
+# #------====== Load Guild Specific Prefix ======------
+# def get_prefix(client, message):
+#     with open('prefixes.json', 'r') as f:
+#         prefixes = json.load(f)
+#     return prefixes[str(message.guild.id)]
 
-intents1 = discord.Intents.default()
-intents1.members = True
+# intents1 = discord.Intents.default()
+# intents1.members = True
 
-client = commands.Bot(command_prefix = get_prefix, intents=intents1)
+# client = commands.Bot(command_prefix = get_prefix, intents=intents1)
+client = commands.Bot()
 
 #------====== NickBot Startup ======------
 @client.event
