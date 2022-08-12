@@ -39,7 +39,7 @@ async def on_message(message):
     
 
 
-    await message.channel.send("THIS WORKS?")
+    await message.channel.send("THIS WORKSHDDGSAYGDASGD?")
     await client.process_commands(message)
 
 
