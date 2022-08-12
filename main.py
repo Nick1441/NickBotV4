@@ -18,7 +18,7 @@ from discord.ext import commands
 # intents1.members = True
 
 # client = commands.Bot(command_prefix = get_prefix, intents=intents1)
-client = commands.Bot()
+client = commands.Bot(command_prefix = "!")
 
 #------====== NickBot Startup ======------
 @client.event
