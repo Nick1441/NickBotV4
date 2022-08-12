@@ -3,7 +3,7 @@ from cmath import exp
 from unittest import expectedFailure
 import discord
 
-#import config
+import config
 #import customPrefix
 
 import json
@@ -44,4 +44,4 @@ async def on_message(message):
     await client.process_commands(message)
 
 
-client.run("TEST")
+client.run(config.DISCORD_TOKEN)
